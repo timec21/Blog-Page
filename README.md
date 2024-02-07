@@ -28,3 +28,8 @@ And open the browser then type this
 ```bash
 http://localhost:8000
 ```
+
+
+# Homepage
+<img width="856" alt="homepage" src="https://github.com/timec21/Blog-Page/assets/118228196/0a4667fe-c28f-4505-8ad5-baf9b6d7098a">
+
