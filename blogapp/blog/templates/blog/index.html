@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css_files %} {% endblock %}
+{% block title %} homepage {% endblock %}
+{% block content %}
+<div class="container">
+    {% for blog in blogs %}
+        {% if blog.Is_Home %}
+            <div class="hero-blogs py-2">
+                <a href="{% url 'detail' blog.id %}" class="blog-link">
+                    <div class="blog-img mt-3">
+                        <img src="{{ blog.Blog_Image.url }}" alt="{{ blog.Blog_Title }}" width="100%">
+                    </div>
+                    <div class="blog-name mt-3">
+                        <h5 class="text-center">
+                            {{ blog.Blog_Title }}
+                        </h5>
+                        <p class="short-desc py-3">
+                            {{ blog.Blog_Short_Description }}
+                        </p>
+                    </div>
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}
+{% block js_files %}
+<script> src = "{% static 'blog/js/script.js'%}"</script>
+{% endblock %}

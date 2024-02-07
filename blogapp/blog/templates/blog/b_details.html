@@ -1,0 +1,16 @@
+<!-- blog_detail.html -->
+{% extends "base.html" %}
+{% block title %} {{ blog.Blog_Title }} {% endblock %}
+{% block content %}
+<div class="container">
+    <div class="blog-detail-name">
+        <h2 class="text-center mt-5">{{ blog.Blog_Title }}</h2>
+    </div>
+    <div class="blog-detail-img py-5">
+        <img src="{{ blog.Blog_Image.url }}" alt="{{ blog.Blog_Title }}" width="100%">
+    </div>
+</div>
+    <div class="blog-detail-desc py-3 p-5">
+        <p>{{ blog.Blog_Descripton }}</p>
+    </div>
+{% endblock %}

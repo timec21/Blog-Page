@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;  
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef !important;
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mynavbar {
+    background-color:rgba(248, 247, 247, 0.906);
+    border-radius: 20px;
+}
+
+.nav-link {
+    color: black !important;
+}
+.nav-link:hover {
+    font-weight: 500 !important;
+    transition: 100ms !important;
+}
+
+.hero-blogs {
+    max-width: 700px;
+    margin: 0 auto !important;
+    margin-top: 3rem !important;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+}
+
+.blog-img {
+    position: relative;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+.blog-img img {
+    transition: 500ms;
+    border-radius: 20px;
+}
+.blog-img:hover img{
+    border-radius: 20px;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
